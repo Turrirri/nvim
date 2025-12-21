@@ -1,0 +1,2 @@
+para actualizar los programas instalados en windwos, abrir el cmd en modo administrador y ejecutar:
+winget upgrade --all --include-unknown
