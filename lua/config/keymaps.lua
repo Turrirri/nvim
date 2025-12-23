@@ -11,6 +11,12 @@ local keymap = vim.keymap -- for conciseness
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- Working with Buffer
+keymap.set("n", "}b", ":bn<cr>", { noremap = true, silent = true })
+keymap.set("n", "}B", ":bl<cr>", { noremap = true, silent = true })
+keymap.set("n", "{b", ":bp<cr>", { noremap = true, silent = true })
+keymap.set("n", "{B", ":bf<cr>", { noremap = true, silent = true })
+
 -- Clean :%s/^M//g
 keymap.set("n", "<leader>cM", ":s/^M//g<CR>", { noremap = true, silent = true, desc = "Delete blank spaces(^M)" })
 
