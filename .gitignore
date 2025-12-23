@@ -8,3 +8,4 @@ foo.*
 data
 undodir
 .DS_Store
+lazy-lock.json
