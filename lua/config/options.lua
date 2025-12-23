@@ -9,6 +9,8 @@ set.termguicolors = true
 
 -- vim.g.snacks_animate = false
 
+vim.g.python3_host_prog = "C:\\ProgramData\\chocolatey\\bin\\python3.13.exe"
+
 -- line numbers
 set.relativenumber = true -- show relative line numbers
 set.number = true -- shows absolute line number on cursor line (when relative number is on)
