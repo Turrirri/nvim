@@ -4,9 +4,9 @@
 
 -- Abreviaturas
 
-vim.cmd("ab jhs Jhonny Salazar")
-vim.cmd("emailg picure01@gnail.com")
-vim.cmd("emaily picure01@yahoo.com")
+vim.cmd("abb jhs Jhonny Salazar")
+vim.cmd("abb emailg picure01@gnail.com")
+vim.cmd("abb emaily picure01@yahoo.com")
 
 local set = vim.opt -- Generals options (Windows/Files)
 
