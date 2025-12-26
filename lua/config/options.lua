@@ -2,6 +2,12 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
+-- Abreviaturas
+
+vim.cmd("ab jhs Jhonny Salazar")
+vim.cmd("emailg picure01@gnail.com")
+vim.cmd("emaily picure01@yahoo.com")
+
 local set = vim.opt -- Generals options (Windows/Files)
 
 set.colorcolumn = "80"
