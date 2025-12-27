@@ -122,7 +122,7 @@ return {
     notifier = { enabled = false },
     quickfile = { enabled = true },
     scope = { enabled = false },
-    statuscolumn = { enabled = false },
+    statuscolumn = { enabled = true },
     words = { enabled = false },
     rename = { enabled = true },
     zen = {
