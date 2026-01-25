@@ -56,3 +56,7 @@ set.swapfile = false
 --     enable = function(_, _) end,
 --   }
 -- end
+
+-- Establecer los lenguajes de corrección ortográfica
+
+vim.opt.spelllang = { "en_us", "es" }
