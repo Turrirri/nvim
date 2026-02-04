@@ -3,6 +3,7 @@
 -- Add any additional options here
 local set = vim.opt -- Generals options (Windows/Files)
 
+set.spelllang = { "en_us", "es" }
 set.colorcolumn = "80"
 set.termguicolors = true
 
@@ -58,5 +59,3 @@ set.swapfile = false
 -- end
 
 -- Establecer los lenguajes de corrección ortográfica
-
-vim.opt.spelllang = { "en_us", "es" }
