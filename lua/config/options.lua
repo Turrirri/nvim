@@ -46,6 +46,7 @@ set.clipboard = "unnamedplus" -- use system clipboard as default register
 -- split windows
 set.splitright = true -- split vertical window to the right
 set.splitbelow = true -- split horizontal window to the bottom
+set.scrolloff = 999 -- 999 lines above/below cursor when scrolling
 
 -- turn off swapfile
 set.swapfile = false
