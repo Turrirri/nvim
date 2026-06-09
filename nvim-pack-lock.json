@@ -1,0 +1,12 @@
+{
+  "plugins": {
+    "mac-clear": {
+      "rev": "1f87d977f44fb8a0433048044d8bbc9304262183",
+      "src": "https://github.com/boningmaple/mac-clear"
+    },
+    "nightfly": {
+      "rev": "66050453bf40ac7eddc7a84dd15291db85fefc43",
+      "src": "https://github.com/bluz71/vim-nightfly-colors"
+    }
+  }
+}
