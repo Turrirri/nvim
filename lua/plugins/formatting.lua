@@ -1,20 +1,36 @@
 return {
   {
     "stevearc/conform.nvim",
+    lazy = true,
+    cmd = "ConformInfo",
+    keys = {
+      {
+        "<leader>cF",
+        function()
+          require("conform").format({ formatters = { "injected" }, timeout_ms = 3000 })
+        end,
+        mode = { "n", "v" },
+        desc = "Format Injected Langs",
+      },
+    },
     opts = {
+      default_format_opts = {
+        timeout_ms = 3000,
+        async = false,
+        quiet = false,
+        lsp_format = "fallback",
+      },
       formatters_by_ft = {
         lua = { "stylua" },
-        python = { "isort", "black" },
-        c = { "clang_format" },
-        cpp = { "clang_format" },
-        json = { "prettier" },
-        yaml = { "prettier" },
-        markdown = { "prettier" },
-        sh = { "shfmt" },
+        typescript = { "biome", "prettier", stop_after_first = true },
+        -- Add other filetypes here
       },
-      format_on_save = {
-        timeout_ms = 500,
-        lsp_fallback = true,
+      formatters = {
+        biome = {
+          condition = function(ctx)
+            return vim.fs.find({ "biome.json" }, { path = ctx.filename, upward = true })[1]
+          end,
+        },
       },
     },
   },
