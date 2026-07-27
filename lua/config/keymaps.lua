@@ -25,3 +25,11 @@ map("n", "gh", "^", { desc = "Go to start of line" })
 
 -- Markdown
 vim.keymap.set("n", "<C-m>", ":MarkdownPreviewToggle<CR>", { silent = true })
+
+-- Mover línea/bloque hacia abajo
+vim.keymap.set("n", "<A-Down>", ":m .+1<CR>==", { silent = true })
+vim.keymap.set("v", "<A-Down>", ":m '>+1<CR>gv=gv", { silent = true })
+
+-- Mover línea/bloque hacia arriba
+vim.keymap.set("n", "<A-Up>", ":m .-2<CR>==", { silent = true })
+vim.keymap.set("v", "<A-Up>", ":m '<-2<CR>gv=gv", { silent = true })
