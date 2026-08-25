@@ -5,9 +5,15 @@ require("ui.line_numbers")
 -- Función para transparentar el fondo
 local function transparent_background()
   local hl_groups = {
-    "Normal", "NormalFloat", "SignColumn", "NormalNC",
-    "TelescopeBorder", "TelescopeNormal", "NvimTreeNormal",
-    "NeoTreeNormal", "NeoTreeNormalNC"
+    "Normal",
+    "NormalFloat",
+    "SignColumn",
+    "NormalNC",
+    "TelescopeBorder",
+    "TelescopeNormal",
+    "NvimTreeNormal",
+    "NeoTreeNormal",
+    "NeoTreeNormalNC",
   }
   for _, group in ipairs(hl_groups) do
     vim.api.nvim_set_hl(0, group, { bg = "none", ctermbg = "none" })
@@ -18,6 +24,14 @@ end
 vim.api.nvim_create_autocmd("ColorScheme", {
   pattern = "*",
   callback = transparent_background,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "text", "markdown" },
+  callback = function()
+    vim.opt_local.textwidth = 80
+    vim.opt_local.formatoptions:append("ta")
+  end,
 })
 
 -- Llamada inicial por si acaso
