@@ -25,14 +25,6 @@ vim.api.nvim_create_autocmd("ColorScheme", {
   pattern = "*",
   callback = transparent_background,
 })
-
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "text", "markdown" },
-  callback = function()
-    vim.opt_local.textwidth = 80
-    vim.opt_local.formatoptions:append("ta")
-  end,
-})
-
+--
 -- Llamada inicial por si acaso
 transparent_background()
