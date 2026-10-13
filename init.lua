@@ -1,3 +1,4 @@
+vim.opt_local.spelllang = { "en", "es" }
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 require("ui.line_numbers")
