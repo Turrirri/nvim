@@ -29,4 +29,3 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 --
 -- Llamada inicial por si acaso
 transparent_background()
-vim.opt_local.spelllang = { "en", "es" }
