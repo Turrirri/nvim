@@ -33,3 +33,12 @@ vim.keymap.set("v", "<A-Down>", ":m '>+1<CR>gv=gv", { silent = true })
 -- Mover línea/bloque hacia arriba
 vim.keymap.set("n", "<A-Up>", ":m .-2<CR>==", { silent = true })
 vim.keymap.set("v", "<A-Up>", ":m '<-2<CR>gv=gv", { silent = true })
+
+-- Ver el detalle del error en una ventana flotante
+map("n", "<leader>cd", function()
+  vim.diagnostic.open_float()
+end, { desc = "Línea de diagnóstico flotante" })
+
+-- Si usas Trouble (el panel general de errores de LazyVim)
+map("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Panel de Diagnósticos (Trouble)" })
+map("n", "<leader>xX", "<cmd>Trouble buffer_diagnostics toggle<cr>", { desc = "Diagnósticos del Buffer (Trouble)" })
