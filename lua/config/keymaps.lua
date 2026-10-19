@@ -39,6 +39,11 @@ map("n", "<leader>cd", function()
   vim.diagnostic.open_float()
 end, { desc = "Línea de diagnóstico flotante" })
 
+-- Mostrar pantalla inicial de LazyVim
+vim.keymap.set("n", "<leader>sv", function()
+  Snacks.dashboard()
+end, { desc = "Abrir Dashboard (Snacks)" })
+
 -- Si usas Trouble (el panel general de errores de LazyVim)
 map("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Panel de Diagnósticos (Trouble)" })
 map("n", "<leader>xX", "<cmd>Trouble buffer_diagnostics toggle<cr>", { desc = "Diagnósticos del Buffer (Trouble)" })
