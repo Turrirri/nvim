@@ -22,10 +22,11 @@ local function transparent_background()
 end
 
 -- Ejecutar la función al iniciar y cada vez que cambie el colorscheme
-vim.api.nvim_create_autocmd("ColorScheme", {
-  pattern = "*",
-  callback = transparent_background,
-})
---
+-- vim.api.nvim_create_autocmd("ColorScheme", {
+--   pattern = "*",
+--   callback = transparent_background,
+-- })
+
 -- Llamada inicial por si acaso
-transparent_background()
+-- transparent_background()
+vim.cmd.colorscheme("tokyonight-moon")

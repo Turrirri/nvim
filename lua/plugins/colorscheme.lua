@@ -62,13 +62,13 @@ return {
   },
 
   -- kanagawa
-  {
-    "rebelot/kanagawa.nvim",
-    lazy = false, -- Queremos que se cargue al arrancar para evitar el parpadeo del tema por defecto
-    priority = 1000, -- Asegura que se cargue antes que otros plugins
-    config = function()
-      -- Cargar el colorscheme
-      vim.cmd("colorscheme kanagawa")
-    end,
-  },
+  -- {
+  --   "rebelot/kanagawa.nvim",
+  --   lazy = false, -- Queremos que se cargue al arrancar para evitar el parpadeo del tema por defecto
+  --   priority = 1000, -- Asegura que se cargue antes que otros plugins
+  --   config = function()
+  --     -- Cargar el colorscheme
+  --     vim.cmd("colorscheme kanagawa")
+  --   end,
+  -- },
 }
