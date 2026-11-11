@@ -3,18 +3,11 @@ return {
   event = "VeryLazy",
   keys = {
     {
-      "<leader>-",
+      "<leader>y",
       function()
         require("yazi").yazi()
       end,
       desc = "Abrir Yazi",
-    },
-    {
-      "<leader>cw",
-      function()
-        require("yazi").toggle_cw()
-      end,
-      desc = "Yazi en el directorio del archivo actual",
     },
   },
   opts = {
