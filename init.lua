@@ -2,7 +2,6 @@ vim.opt_local.spelllang = { "en", "es" }
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 require("ui.line_numbers")
--- vim.cmd.colorscheme("tokyonight-moon")
 -- Función para transparentar el fondo
 local function transparent_background()
   local hl_groups = {
@@ -29,4 +28,3 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 
 -- Llamada inicial por si acaso
 transparent_background()
--- vim.cmd.colorscheme("kanagawa")

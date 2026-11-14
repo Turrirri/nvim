@@ -33,6 +33,7 @@ return {
         { "<leader>b", group = "buffers" },
         { "<leader>u", group = "ui" },
         { "<leader>t", group = "terminal" },
+        { "<leader>m", group = "multicursor" },
       },
     },
   },
