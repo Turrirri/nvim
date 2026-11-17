@@ -18,7 +18,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "nordfox", -- O puedes cambiarlo a "nordfox"
+      colorscheme = "duskfox", -- O puedes cambiarlo a "nordfox"
     },
   },
 }
