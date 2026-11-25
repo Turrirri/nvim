@@ -15,10 +15,10 @@ return {
   },
 
   -- Configuración principal del tema activo en LazyVim
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "duskfox", -- O puedes cambiarlo a "nordfox"
-    },
-  },
+  -- {
+  --   "LazyVim/LazyVim",
+  --   opts = {
+  --     colorscheme = "duskfox", -- O puedes cambiarlo a "nordfox"
+  --   },
+  -- },
 }
